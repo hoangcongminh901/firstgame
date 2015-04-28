@@ -61,7 +61,7 @@ public class GameActivity extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         //declare a new int to be used in all the cases
-        int answerGiven;
+        int answerGiven = 0;
         switch (v.getId()){
             case R.id.buttonChoice1:
                 //initialize a new int with the value contained in buttonObjectChoice1
@@ -81,7 +81,7 @@ public class GameActivity extends Activity implements View.OnClickListener {
         setQuestion();
     }
 
-    void setQuestion{
+    void setQuestion(){
         //generate the parts of the question
         int numberRange = currentLevel * 3;
         Random randInt = new Random();
